@@ -1,0 +1,5 @@
+stages:
+  train:
+    cmd: python tex_gan.py
+    deps:
+    outs:
