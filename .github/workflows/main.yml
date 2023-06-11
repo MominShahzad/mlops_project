@@ -7,7 +7,7 @@ on:
     types: [submitted]
 jobs:
   main_build:
-    if: (github.event.review.state == 'approved' && github.ref == 'refs/heads/main') ||  github.ref == 'refs/heads/main'
+    if: github.event.review.state == 'approved' && github.ref == 'refs/heads/main' ||  github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
