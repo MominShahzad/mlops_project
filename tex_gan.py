@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 
-import google.cloud.logging
+#import google.cloud.logging
 import torch 
 import torch.nn as nn
 import os
 
-if int(os.environment.get("PRODUCTION",0)) == 1:
+#if int(os.environment.get("PRODUCTION",0)) == 1:
 
-    logging_client = google.cloud.logging.Client()
+    #logging_client = google.cloud.logging.Client()
 
-    logging_client.setup_logging()
+    #logging_client.setup_logging()
 
 class Generator(nn.Module):
     def __init__(self, channels_noise, channels_img, features_g):
