@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#tex.gan.py
 #import google.cloud.logging
 import torch 
 import torch.nn as nn
